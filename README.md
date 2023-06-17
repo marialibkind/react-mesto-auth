@@ -4,4 +4,4 @@
 
 Инструменты: флекс, гриды, абсолютное позицианирование, javaScript, react.
 
-ссылка: https://marialibkind.github.io/mesto-react/
+ссылка: https://marialibkind.github.io/react-mesto-auth/
