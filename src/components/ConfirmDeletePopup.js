@@ -15,8 +15,7 @@ function ConfirmDeletePopup(props) {
             buttonText="Да"
             onClose={props.onClose}
             onSubmitButton={handleSubmit}
-        >
-        </PopupWithForm>
+        />
     )
 }
 export default ConfirmDeletePopup;

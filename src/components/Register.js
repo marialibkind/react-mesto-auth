@@ -30,10 +30,12 @@ function Register(props) {
                 onSubmit={handleSubmit}
             >
                 <input className="register__input" name="enterName" type="text" minLength="2"
-                    maxLength="40" onChange={handleChangeEmail} placeholder="Email" />
+                    maxLength="40" onChange={handleChangeEmail} placeholder="Email" value={email} />
                 <span className="input-error-enterName popup__input-error"></span>
-                <input className="register__input" name="enterInfo" type="password" required="required" autoComplete="true"
-                    minLength="2" maxLength="200" onChange={handleChangePassword} placeholder="Пароль"
+
+                <input className="register__input" name="enterInfo" type="password" required="required"
+                    autoComplete="true" minLength="2" maxLength="200" onChange={handleChangePassword}
+                    placeholder="Пароль" value={password}
                 />
                 <span className="input-error-enterInfo popup__input-error"></span>
 

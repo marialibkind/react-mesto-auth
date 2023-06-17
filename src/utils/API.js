@@ -115,20 +115,3 @@ export const api = new API({
         'Content-Type': 'application/json'
     }
 });
-
-//   Promise.all([api.getUserInfo(), api.getInitialCards()]).then((res) => {
-//     console.log(res);
-//     const user = res[0];
-//     cardsSection.renderItems(res[1], user._id);
-//     userInfo.setUserInfo(user.name, user.about, user._id);
-//     userInfo.setUserAvatar(user.avatar);
-//   }).catch((error) =>
-//     console.error(error))
-
-
-
-
-
-
-
-

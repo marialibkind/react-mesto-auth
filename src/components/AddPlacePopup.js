@@ -18,7 +18,7 @@ function AddPlacePopup(props) {
 
         e.preventDefault();
 
-        props.onAddPlace({name, link})
+        props.onAddPlace({ name, link })
     }
 
     return (
@@ -29,11 +29,13 @@ function AddPlacePopup(props) {
             onClose={props.onClose}
             onSubmitButton={handleSubmit}
         >
-            <input className="popup__text popup__text_type_image-name" name="enterName" type="text" minLength="4"
-                maxLength="30" placeholder="Название" onChange={handleChangeName} value={name} />
+            <input className="popup__text popup__text_type_image-name" name="enterName"
+                type="text" minLength="4" maxLength="30" placeholder="Название"
+                onChange={handleChangeName} value={name} />
             <span className="input-error-enterName popup__input-error"></span>
-            <input className="popup__text popup__text_type_image-src" name="enterInfo" type="url" required="required"
-                placeholder=" Ссылка на картинку" onChange={handleChangeLink} value={link} />
+            <input className="popup__text popup__text_type_image-src" name="enterInfo"
+                type="url" required="required" placeholder=" Ссылка на картинку"
+                onChange={handleChangeLink} value={link} />
             <span className="input-error-enterInfo popup__input-error"></span>
         </PopupWithForm>
     )

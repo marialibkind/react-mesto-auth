@@ -1,5 +1,4 @@
-import { useContext, useState, useEffect } from "react";
-import { NavLink, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 function Login(props) {
 
@@ -25,24 +24,22 @@ function Login(props) {
             <form
                 //     title="Редактировать профиль"
                 //     isOpen={props.isOpen}
-                buttonText="Сохранить"
                 //     onClose={props.onClose}
                 onSubmit={handleSubmit}
             >
                 <input className="register__input" name="enterName" type="text" minLength="2"
-                    maxLength="40" onChange={handleChangeEmail} placeholder="Email" />
+                    maxLength="40" onChange={handleChangeEmail} placeholder="Email" value={email} />
                 <span className="input-error-enterName popup__input-error"></span>
-                <input className="register__input" name="enterInfo" type="password" required="required" autoComplete="true"
-                    minLength="2" maxLength="200" onChange={handleChangePassword} placeholder="Пароль" 
-                    />
+
+                <input className="register__input" name="enterInfo" type="password" required="required"
+                    autoComplete="true" minLength="2" maxLength="200" value={password}
+                    onChange={handleChangePassword} placeholder="Пароль"
+                />
                 <span className="input-error-enterInfo popup__input-error"></span>
+
                 <button type="submit" className="register__submit-btn">Войти</button>
             </form>
             <div>
-                <Routes>
-                    <Route path="/sign-up" element={<NavLink to="/sign-in"
-                        className="registered__in" >Уже зарегистрированы? Войти</NavLink>} />
-                </Routes>
             </div>
         </div>
     )

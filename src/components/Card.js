@@ -22,12 +22,15 @@ function Card(props) {
 
 	return (
 		<div className="element">
-			{isOwn && (<button className="element__bin" type="button" aria-label="мусорка" onClick={handleDeleteClick}></button>)}
-			<img src={props.card.link} className="element__image" alt={props.card.name} onClick={openImagePopup} />
+			{isOwn && (<button className="element__bin" type="button" aria-label="мусорка" 
+			onClick={handleDeleteClick}></button>)}
+			<img src={props.card.link} className="element__image" alt={props.card.name} 
+			onClick={openImagePopup} />
 			<div className="element__line">
 				<h2 className="element__name">{props.card.name}</h2>
 				<div>
-					<button className={cardLikeButtonClassName} type="button" aria-label="like" onClick={handleLikeClick}></button>
+					<button className={cardLikeButtonClassName} type="button" aria-label="like"
+					 onClick={handleLikeClick}></button>
 					<div className="element__like_count">{props.card.likes.length}</div>
 				</div>
 			</div>
