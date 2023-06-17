@@ -1,0 +1,11 @@
+.register__container {
+    margin: 0 auto 0;
+    display: flex;
+    position: relative;
+    max-width: 358px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0 0 ;
+    
+
+}

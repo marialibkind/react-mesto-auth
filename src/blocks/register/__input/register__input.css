@@ -1,0 +1,18 @@
+.register__input{
+    display: block;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 30px;
+    border-bottom: 1px solid white ;  
+    width:100%;
+    padding: 0 0 13px;
+    p:nth-of-type(4n) input{-webkit-text-security:circle;}
+}
+.register__input:last-of-type{
+    margin: 0 0 216px;
+}
