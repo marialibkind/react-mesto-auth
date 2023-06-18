@@ -35,7 +35,7 @@ function App() {
   const [isSuccessInfoTooltipStatus, setIsSuccessInfoTooltipStatus] = useState(false);
   const [infoTooltipMessage, setInfoTooltipMessage] = useState('');
 
-  const checkToken = () => {
+   useEffect(() => {
     if (localStorage.getItem("token")) {
       loginWithToken().then((res) => {
         if (res) {
@@ -46,10 +46,9 @@ function App() {
         }
       }).catch((error) => console.error(error))
     }
-  }
+  }, [])
 
   useEffect(() => {
-    checkToken();
     if (loggedIn) {
       try {
         api.getInitialCards().then((res) => {
